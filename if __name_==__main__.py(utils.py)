@@ -1,0 +1,22 @@
+%%writefile utils.py
+# Imagine this file has functions you’ll reuse in other programs:
+def greet(name):
+    print(f"Hello {name}, welcome back!")
+
+def add(a, b):
+    return a + b
+print(__name__)
+# Testing code
+if __name__ == "__main__":
+    print("Testing utils module...")
+    greet("Shahroze")
+    print(add(5, 10))
+
+# What this means:
+
+# => The functions greet() and add() are reusable.
+# => The code inside if __name__ == "__main__": runs only when you test this file directly (to check if your functions work).
+# => It won’t run when you import this file elsewhere.
+
+# If we want to import this file into another file then we need to use if __name__ == "__main__". 
+# And if we run only this file, then it is not neccessary.
