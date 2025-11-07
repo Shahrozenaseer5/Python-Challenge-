@@ -1,0 +1,1 @@
+Now we are in myfile2.txtHi ! my friendHi ! my friendHi ! my friendI am inside 'with' statementI am inside 'with' statementI am inside 'with' statement
