@@ -1,0 +1,32 @@
+# if __name__ == "__main__" in Python
+# The if __name__ == "__main__" idiom is a common pattern used in python scripts to determine whether the script is being run directly or
+# being imported as a module into another script.
+
+# in python, the __name__ variable is a built in variable that is automatically set to the name of the current module.
+
+# When a python script run directly, the __name__ variable set to the string __main__ . when the script imported as a module, into another
+# script, the __name__ variable is set to the name of the module.
+import os
+os.system('cls')
+
+# import shah
+# shah.greet()
+
+
+# This is your main program that uses those helper functions : 
+import utils
+
+print("Running main program...")
+utils.greet("Shahri")
+result = utils.add(3676, 77897)
+print("Sum =", result)
+# ✅ Notice:
+# The “Testing utils module...” part didn’t appear — because it’s inside the if __name__ == "__main__": block in utils.py.
+
+# 💡 Why this is useful :
+
+# It lets you:
+
+# => Write functions and classes in one file.
+# => Test them freely in the same file.
+# => Import them anywhere else without the test code running again.
